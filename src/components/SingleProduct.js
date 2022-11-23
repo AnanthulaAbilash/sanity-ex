@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
@@ -69,8 +68,10 @@ function SingleProduct() {
           <img
             src={singleProduct.mainImage.asset.url}
             alt={singleProduct.title}
-            className="w-full object-cover rounded-t"
-            style={{ height: "400px" }}
+            className="h-auto w-full object-cover rounded-t aspect-auto lg:max-h-[60vh] lg:max-w-[60vw]"
+            /* style={{ maxHeight: "60vh",
+            maxWidth: "60vw",
+           }} */
           />
         </header>
         <div className="flex text-white font-medium relative justify-end align-end bg-[IndianRed] w-auto">

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
@@ -40,7 +39,8 @@ function Contact() {
     <main className="relative min-h-screen pb-12 pt-20 flex-column items-center justify-center">
       <img
         src={contactbg}
-        className="-z-50 w-full h-full object-cover absolute opacity-82"
+        alt="img"
+        className="-z-50 bg-[DarkGreen] w-full h-full object-cover absolute opacity-82"
       />
       <div className="p-10 lg:pt-48 container mx-auto relative flex justify-center shadow-lg">
         <section className="bg-[BurlyWood] rounded-lg shadow-2xl lg:flex p-20">
