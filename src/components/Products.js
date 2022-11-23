@@ -43,7 +43,7 @@ function Products() {
         <h2 className="text-lg text-[DarkSlateGray] flex justify-center mb-12 pt-4 font-medium">
           Welcome to the product store
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 xsmg:grid-cols-1 lgd:grid-cols-3 gap-8">
           {productData &&
             productData.map((product, index) => (
               <article className="h-80 w-80">
