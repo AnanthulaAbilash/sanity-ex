@@ -47,6 +47,11 @@ export default {
       title: "Body",
       type: "blockContent",
     },
+    {
+      name: "price",
+      title: "Price",
+      type: "number",
+    },
   ],
 
   preview: {

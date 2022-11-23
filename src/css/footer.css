@@ -1,0 +1,206 @@
+@import url("logo.css");
+/* @import url('../../node_modules/font-awesome/css/font-awesome.min.css');  */
+
+:root {
+    /* --bubble-shadow:rgba(128, 128, 128, 0.336); */
+    --bubble-shadow: rgb(255, 128, 0);
+    --icon-size: 2rem;
+}
+
+.footerDiv {
+    position: fixed;
+    background: linear-gradient();
+    --footer-color: whitesmoke;
+    --footer-background: whitesmoke;
+    width: 100%;
+
+    display: flex;
+    height: 5rem;
+    bottom: 0.25rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    bottom: 0rem;
+}
+
+.signDiv {
+    display: flex;
+    position: relative;
+    right: 2rem !important;
+}
+
+.footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 0.6rem;
+}
+
+.footer-icons1 {
+    display: flex;
+    position: absolute;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    /* border: 1px solid #262626a0; */
+    align-items: center;
+    justify-content: space-around;
+    /* background: rgb(255, 128, 0); */
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #262626a0;
+    color: white;
+    left: -3rem;
+    top: 2.6rem;
+    border: 2px solid rgba(255, 255, 255, 0.868);
+    box-shadow: 0 0 5px rgba(244, 240, 240, 0.617);
+    opacity: 0.9;
+    transform: scale(0.9);
+}
+
+.footer .content a {
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer-icons1 .LinkedInSvg {
+    height: calc(var(--icon-size) * 0.65);
+    position: relative;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) */
+    /* left: calc(var(--icon-size) * (-0.17));
+  top: calc(var(--icon-size) * (-0.05)); */
+}
+
+.footer-icons1:hover {
+    background: rgb(255, 128, 0);
+
+    color: #6d6e71;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+    border: 1px solid white;
+}
+
+.footer .content b {
+    color: var(--footer-color);
+}
+
+.footer .content p {
+    position: absolute;
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--footer-color);
+    text-decoration: none;
+    font-weight: bold;
+    right: 5rem;
+    bottom: -0.5rem;
+}
+
+.footer .content span {
+    text-indent: 2em;
+    padding-left: 0.3rem;
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(225, 225, 225);
+    /* color: rgb(255, 128, 0); */
+    font-weight: bold;
+    text-shadow:  0px 0px 1px gray;
+    letter-spacing: 0.2px;
+}
+
+.footer .content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .content>div>div {
+    margin: 0.25rem 5rem;
+}
+
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width : 640px) {
+    .footer .content {
+        grid-gap: 0rem !important;
+    }
+
+    .footer .content text {
+        letter-spacing: 0px !important;
+    }
+
+    .footer .content p {
+        transform: scale(0.95);
+        right: 0rem;
+        bottom: -0.6rem;
+    }
+
+    .footer-icons1 {
+        transform: scale(0.85);
+        left: -4.5rem !important;
+        top: 3rem !important;
+    }
+
+
+    .logoContainer {
+        transform: scale(0.9);
+        border: 0 !important;
+        right: -2.1rem;
+        bottom: -0.75rem;
+    }
+
+    .card-logo {
+        box-shadow: 0 0 5px #4f4e4e !important;
+    }
+
+    .footerDiv {
+        bottom: 0.15rem;
+    }
+
+}
+
+
+@media screen and (max-width: 390px) {
+
+    /* .footer .content {
+      display: flex;
+  
+    } */
+    .footer .content p {
+        left: -4.2rem !important;
+
+    }
+
+    .signDiv {
+        display: flex;
+        position: absolute;
+        bottom: 0.65rem;
+        right: 2.2rem !important;
+    }
+
+    .footer .content text {
+        font-size: 0.7rem;
+
+    }
+
+}

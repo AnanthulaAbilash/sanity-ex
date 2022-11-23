@@ -12,7 +12,7 @@ function Home() {
       <section className="relative flex justify-center min-h-screen pt-24 lg:pt-64 px-8 ">
         <h1 className="text-5xl text-[deeppink] font-bold sectionfont leading-none text-shadow lg:leading-snug ">
           {" "}
-          Please explore the designer collections
+          Please explore the designer collections from the Products Menu
         </h1>
       </section>
     </main>
@@ -21,4 +21,3 @@ function Home() {
 
 export default Home;
 //blueviolet bisque blanchedalmond chocolate darkmagenta darkorchid  deeppink Tomato LightCoral
-      

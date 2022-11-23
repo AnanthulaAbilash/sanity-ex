@@ -9,7 +9,7 @@ function Navbar() {
         <nav className="flex mr-auto">
           <NavLink
             to="/"
-            exact
+            exact="true"
             activeclassname="text-brown"
             className="inflex-flex items-center px-11 py-5 mr-4 text-white hover:text-gray-300 text-4xl font-bold mainfont tracking-widest xsm:!text-[25px] xxsm:!leading-[1.75rem]"
           >
@@ -25,11 +25,11 @@ function Navbar() {
             Products
           </NavLink>
           <NavLink
-            to="/about"
+            to="/contact"
             className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[#f8cda6] -300 hover:text-white font-bold"
             activeclassname="!bg-gray-300"
           >
-            About
+            Contact
           </NavLink>
         </nav>
         <div className="relative mr-6 pl-2 flex self-center -top-0.5">

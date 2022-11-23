@@ -1,0 +1,169 @@
+:root {
+    /* For Logo */
+    --colorMain1: #b50d16;
+    --colorMain2: #ef9189;
+    --colorMain3: #ee7177;
+    --colorBcg1: rgba(255, 255, 255, 0.882);
+    --heightContainer: 50px;
+    --widthContainer: 50px;
+}
+
+.logoContainer {
+    display: flex;
+    background-color: var(--colorBcg1);
+    justify-content: center;
+    align-items: center;
+    height: var(--heightContainer);
+    width: var(--widthContainer);
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid var(--colorMain2);
+    /* border: 1px solid rgb(222, 197, 170); */
+    margin: auto;
+    right: -1.8rem;
+    /* margin-left: 0.9rem; */
+    padding-top: 0 !important;
+    opacity: 0.8;
+    box-shadow: 0 0 2px white;
+    bottom: -0.5rem;
+    border: px solid white;
+}
+
+.logoContainer:hover {
+    --colorMain1: rgb(85, 76, 76);
+    --colorMain2: rgb(199, 191, 191);
+    --colorMain3: rgb(155, 142, 142);
+    --colorBcg1: white;
+    /* border: 1px solid rgba(0, 0, 0, 0.653); */
+    border: 1px solid white;
+    /*   opacity:1 */
+}
+
+.card-logo {
+    height: var(--heightContainer);
+    width: var(--widthContainer);
+    border-radius: 50%;
+    box-shadow: 0 0 3px gray;
+
+    position: relative;
+    overflow: hidden;
+    transform: rotate(11deg);
+    z-index: 2;
+}
+
+.logoBar1 {
+    position: absolute;
+    top: 72%;
+    background-image: linear-gradient(180deg,
+            transparent 1.5%,
+            var(--colorMain1) 2%,
+            var(--colorMain2) 70%,
+            var(--colorMain2) 98.5%,
+            transparent 99%);
+    align-self: center;
+    height: 8.2%;
+    width: 50%;
+    left: 29%;
+    z-index: 1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.317) inset;
+    /* transform: rotate(-1deg); */
+}
+
+.logoBar2 {
+    /* border:10px solid black; */
+    position: absolute;
+    top: 59%;
+    background-image: linear-gradient(180deg,
+            transparent 1%,
+            var(--colorMain1) 3%,
+            var(--colorMain1) 40%,
+            var(--colorMain2) 97%,
+            transparent 99%
+            /* transparent 1%,
+      var(--colorMain1) 2.5%,
+      var(--colorMain1) 52%,
+      var(--colorMain2) 98%,
+      transparent 98.5% */
+        );
+
+    align-self: center;
+    height: 11%;
+    width: 70%;
+    left: 10%;
+    /*   transform: rotate(-1deg); */
+    z-index: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.317) inset;
+}
+
+.card-logo::after {
+    content: "";
+    position: absolute;
+    height: calc(var(--heightContainer) * (40 / 25));
+    width: calc(var(--widthContainer) * (30 / 25));
+
+    background-image: linear-gradient(120deg,
+            transparent 1%,
+            var(--colorBcg1) 22.5%,
+            transparent 23%),
+        linear-gradient(0deg,
+            transparent 84%,
+
+            var(--colorMain1) 90.5%,
+            var(--colorMain1) 95%,
+            transparent 95.5%),
+        linear-gradient(64deg,
+            transparent 59.5%,
+            var(--colorMain2) 60%,
+            var(--colorMain1) 68%,
+            var(--colorMain1) 82%,
+            transparent 84%)
+        /* ,linear-gradient(
+      12deg,
+      transparent 86%,
+  
+      
+      var(--colorMain1) 89.5%,
+      transparent 90.5%
+    ), linear-gradient(
+      20deg,
+      transparent 82%,
+  
+      var(--colorMain1) 86%,
+      transparent 88%
+    ), linear-gradient(
+      50deg,
+      transparent 78%,
+  
+      var(--colorMain1) 82%,
+      transparent 84%
+    ) */
+    ;
+    left: -6%;
+    top: -10%;
+    box-shadow: 0 0 30px black;
+    transform: rotate(-8deg);
+    z-index: 2;
+}
+
+.card-logo::before {
+    content: "";
+    position: absolute;
+
+    height: calc(var(--heightContainer) * (30 / 25));
+    width: calc(var(--widthContainer) * (30 / 25));
+    background-image: linear-gradient(112deg,
+            transparent 23.5%,
+            var(--colorMain1) 24%,
+            var(--colorMain1) 32%,
+            var(--colorMain3) 40.2%,
+            transparent 40.7%),
+        linear-gradient(112deg,
+            transparent 41.5%,
+            var(--colorMain1) 42%,
+            var(--colorMain2) 51%,
+            transparent 51.5%);
+    left: -10%;
+    top: -5%;
+    transform: rotate(-deg);
+    z-index: 2;
+}

@@ -47,3 +47,11 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{
+  [1, 2, 3].map((product, index) => {
+    <span className="">
+      <h3 className=""> The numbers are.. {product}</h3>
+    </span>;
+  });
+}
