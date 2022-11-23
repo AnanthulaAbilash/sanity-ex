@@ -76,8 +76,8 @@ function Contact() {
           {/* <hr></hr> */}
           <div className="text-lg flex flex-col justify-center">
             <h1 className="mainfont text-base text-gray-700 mb-4 ">
-              To purchase the products in the store or to order new work, please
-              contact the below:
+              To purchase the products in the store or to order new work,{" "}
+              <br></br>please contact the below:
             </h1>
             <div className="text-[gray] font-medium">
               <p className="text-[1.2rem] text-[Sienna] font-bold underline ">
