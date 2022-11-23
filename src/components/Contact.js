@@ -37,12 +37,12 @@ function Contact() {
   //console.log("the designer is", designer);
 
   return (
-    <main className="relative min-h-screen pb-12 pt-20 flex-column items-center justify-center mx-auto">
+    <main className="relative min-h-screen pb-12 pt-20 flex-column items-center justify-center">
       <img
         src={contactbg}
         className="-z-50 w-full h-full object-cover absolute opacity-82"
       />
-      <div className="p-10 lg:pt-48 container mx-auto relative flex">
+      <div className="p-10 lg:pt-48 container mx-auto relative flex justify-center shadow-lg">
         <section className="bg-[BurlyWood] rounded-lg shadow-2xl lg:flex p-20">
           {designer?.designerImage && (
             <img
@@ -71,8 +71,8 @@ function Contact() {
         </section>
       </div>
 
-      <div className="p-10 lg:pt-36 container mx-auto relative flex justify-self-end ">
-        <section className="bg-[Cornsilk] bg-opacity-75 rounded-2xl shadow-2xl lg:flex p-10">
+      <div className="p-10 lg:pt-36 container mx-auto relative flex justify-center shadow-lg">
+        <section className="bg-[Cornsilk] bg-opacity-75 rounded-2xl shadow-2xl lg:flex p-16">
           {/* <hr></hr> */}
           <div className="text-lg flex flex-col justify-center">
             <h1 className="mainfont text-base text-gray-700 mb-4 ">
