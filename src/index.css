@@ -24,3 +24,9 @@
   font-size: 150px;
 
 }
+
+.text-shadow {
+  text-shadow: 0 0 4px whitesmoke;
+}
+
+

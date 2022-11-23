@@ -3,17 +3,22 @@ import homeImg from "../assets/red-color-blue-colorful-yarn-wool-764435-pxhere.c
 
 function Home() {
   return (
-    <main>
+    <main className="pt-20">
       <img
         src={homeImg}
         alt="The weaving"
         className="absolute object-cover w-full h-full opacity-60 brightness-70"
       />
-      <section>
-        <h1> Please explore the design collections</h1>
+      <section className="relative flex justify-center min-h-screen pt-24 lg:pt-64 px-8 ">
+        <h1 className="text-5xl text-[deeppink] font-bold sectionfont leading-none text-shadow lg:leading-snug ">
+          {" "}
+          Please explore the designer collections
+        </h1>
       </section>
     </main>
   );
 }
 
 export default Home;
+//blueviolet bisque blanchedalmond chocolate darkmagenta darkorchid  deeppink Tomato LightCoral
+      
