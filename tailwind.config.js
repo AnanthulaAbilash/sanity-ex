@@ -8,6 +8,8 @@ module.exports = {
       },
     },
     screens: {
+      smbs: { max: "361px" },
+      smbl: { max: "400px" },
       xxsm: { max: "550px" },
       xsm: { max: "650px" },
       xsmg: { max: "740px" },

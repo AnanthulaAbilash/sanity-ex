@@ -37,7 +37,7 @@ function Products() {
   return (
     <main className="bg-[LightCoral] min-h-screen p-12 pt-20 pb-48">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex text-[DarkOliveGreen] justify-center mainfont pt-20">
+        <h1 className="text-5xl flex text-[DarkOliveGreen] justify-center mainfont pt-[5rem] text-center">
           Products Page
         </h1>
         <h2 className="text-lg text-[DarkSlateGray] flex justify-center mb-12 pt-4 font-medium">
@@ -46,13 +46,13 @@ function Products() {
         <div className="grid grid-cols-2 xsmg:grid-cols-1 lgd:grid-cols-3 gap-8">
           {productData &&
             productData.map((product, index) => (
-              <article className="h-80 w-80">
+              <article className="relative h-80 w-80 smbl:h-[18rem] smbl:w-[18rem] smbs:-left-[0.7rem]">
                 <Link
                   to={"/products/" + product.slug.current}
                   key={product.slug.current}
                 >
                   <span
-                    className="block h-80 w-80 relative rounded shadow leading-snug bg-[rgb(225,225,225)] border-[LightSeaGreen]"
+                    className="block h-80 w-80 relative rounded shadow leading-snug bg-[rgb(225,225,225)] border-[LightSeaGreen] smbl:h-[18rem] smbl:w-[18rem]"
                     key={index + 1}
                   >
                     <img

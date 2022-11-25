@@ -11,28 +11,28 @@ function Navbar() {
             to="/"
             exact="true"
             activeclassname="text-brown"
-            className="inflex-flex items-center px-11 py-5 mr-4 text-white hover:text-gray-300 text-4xl font-bold mainfont tracking-widest xsm:!text-[25px] xxsm:!leading-[1.75rem]"
+            className="inflex-flex items-center px-11 py-5 mr-4 text-white hover:text-gray-300 text-4xl font-bold mainfont tracking-widest xsm:!text-[25px] xxsm:!leading-[1.75rem] smbl:!px-[1rem]"
           >
             Asha's Boutique
           </NavLink>
         </nav>
-        <nav className="flex relative right-4 self-end">
+        <nav className="flex relative right-4 self-end smbl:!-left-[0.5rem]">
           <NavLink
             to="/products"
-            className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[#f8cda6] -300 hover:text-white font-bold text-l"
+            className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[#f8cda6] -300 hover:text-white font-bold text-l smbl:px-[0.75rem]"
             activeclassname="!bg-gray-300"
           >
             Products
           </NavLink>
           <NavLink
             to="/contact"
-            className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[#f8cda6] -300 hover:text-white font-bold"
+            className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[#f8cda6] -300 hover:text-white font-bold smbl:px-[0.5rem]"
             activeclassname="!bg-gray-300"
           >
             Contact
           </NavLink>
         </nav>
-        <div className="relative mr-6 pl-2 flex self-center -top-0.5">
+        <div className="relative mr-6 pl-2 flex self-center -top-0.85 smbl:right-[0.1rem] smbs:!right-[0.6rem] ">
           <SocialIcon
             url=""
             target="_blank"

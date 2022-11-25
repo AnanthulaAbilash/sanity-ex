@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
@@ -45,7 +45,7 @@ function SingleProduct() {
   if (!singleProduct) return <div>Loading...</div>;
 
   return (
-    <main className="bg-[PeachPuff] min-h-screen p-12 pt-20 pb-28">
+    <main className="bg-[PeachPuff] min-h-screen p-12 pt-[8rem] pb-28">
       <article className="container shadow-lg mx-auto bg-[SkyBlue] rounded-lg">
         <div className=" relative h-full w-full flex items-center justify-center p-8 pt-0">
           <div className="bg-white bg-opacity-100 rounded p-4">
@@ -85,6 +85,19 @@ function SingleProduct() {
             projectId="tmvzdzrj"
             dataset="production"
           />
+        </div>
+
+        <div className="flex text-gray-700 font-medium relative justify-center align-center bg-gray-100 w-auto border-t-4 border-[white]">
+          <span className="relative text-base px-4 py-1 pb-4 text-center">
+            To purchase or book an order please see{" "}
+            <NavLink
+              to="/contact"
+              className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[IndianRed] -300 hover:text-white font-bold smbl:px-[0.5rem]"
+              activeclassname="!bg-gray-300"
+            >
+              Contact
+            </NavLink>
+          </span>
         </div>
       </article>
     </main>

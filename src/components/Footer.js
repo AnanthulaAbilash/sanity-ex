@@ -27,7 +27,7 @@ function Navbar() {
                 <div className="logoBar2"></div>
               </div>
             </div>
-            <p>
+            <p className="smbl:!-left-[-6rem]">
               ©2022 <span> abilash.ananthula@gmail.com</span>
             </p>
           </div>
