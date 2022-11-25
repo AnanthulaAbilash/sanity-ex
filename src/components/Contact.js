@@ -42,7 +42,7 @@ function Contact() {
         alt="img"
         className="-z-50 bg-[DarkGreen] w-full h-full object-cover absolute opacity-82"
       />
-      <div className="p-10 lg:pt-48 container mx-auto relative flex justify-center shadow-lg ">
+      <div className="p-10 pt-14 lg:pt-48 container mx-auto relative flex justify-center shadow-lg ">
         <section className="bg-[BurlyWood] rounded-lg shadow-2xl lg:flex p-20 smbl:p-10">
           {designer?.designerImage && (
             <img

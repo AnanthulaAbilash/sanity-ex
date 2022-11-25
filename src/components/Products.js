@@ -37,7 +37,7 @@ function Products() {
   return (
     <main className="bg-[LightCoral] min-h-screen p-12 pt-20 pb-48">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex text-[DarkOliveGreen] justify-center mainfont pt-[5rem] text-center">
+        <h1 className="text-5xl flex text-[DarkOliveGreen] justify-center mainfont pt-[5rem] text-center smbl:text-3xl smbl:pt-[3rem]">
           Products Page
         </h1>
         <h2 className="text-lg text-[DarkSlateGray] flex justify-center mb-12 pt-4 font-medium">

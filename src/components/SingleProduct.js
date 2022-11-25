@@ -48,17 +48,17 @@ function SingleProduct() {
     <main className="bg-[PeachPuff] min-h-screen p-12 pt-[8rem] pb-28">
       <article className="container shadow-lg mx-auto bg-[SkyBlue] rounded-lg">
         <div className=" relative h-full w-full flex items-center justify-center p-8 pt-0">
-          <div className="bg-white bg-opacity-100 rounded p-4">
-            <h1 className="mainfont text-3xl lg:text-6xl mb-4">
+          <div className="bg-white bg-opacity-100 rounded p-4 smbl:p-2 smbl:px-4">
+            <h1 className="mainfont text-3xl lg:text-6xl mb-4 smbl:text-xl smbl:mb-2">
               {singleProduct.title}
             </h1>
             <div className="flex justify-center text-gray-600">
               <img
                 src={urlFor(singleProduct.authorImage).url()}
                 alt={singleProduct.name}
-                className="w-10 h-10 rounded-full"
+                className="w-10 h-10 rounded-full smbl:w-6 smbl:h-6"
               />
-              <p className="sectionfont flex items-center pl-2 text-2xl">
+              <p className="sectionfont flex items-center pl-2 text-2xl smbl:text-base">
                 {singleProduct.name}
               </p>
             </div>
