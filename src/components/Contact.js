@@ -42,23 +42,23 @@ function Contact() {
         alt="img"
         className="-z-50 bg-[DarkGreen] w-full h-full object-cover absolute opacity-82"
       />
-      <div className="p-10 lg:pt-48 container mx-auto relative flex justify-center shadow-lg">
-        <section className="bg-[BurlyWood] rounded-lg shadow-2xl lg:flex p-20">
+      <div className="p-10 lg:pt-48 container mx-auto relative flex justify-center shadow-lg ">
+        <section className="bg-[BurlyWood] rounded-lg shadow-2xl lg:flex p-20 smbl:p-10">
           {designer?.designerImage && (
             <img
               src={urlFor(designer.designerImage).url()}
-              className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8 "
+              className="rounded-full w-32 h-32 lg:w-64 lg:h-64 mr-8 smbl:w-28 smbl:h-28"
               alt={designer.name}
             />
           )}
-          <div className="text-lg flex flex-col justify-center">
-            <h1 className="mainfont text-6xl text-gray-700 mb-4">
+          <div className="text-lg flex flex-col justify-center smbl:text-base">
+            <h1 className="mainfont text-6xl text-gray-700 mb-4 smbl:text-3xl">
               I am{" "}
               {designer?.name && (
                 <span className="text-[Sienna]">'{designer.name}'</span>
               )}
             </h1>
-            <div className="prose lg:prose-xl text-[#4682B4] text-lg font-medium">
+            <div className="prose lg:prose-xl text-[#4682B4] text-lg font-medium smbl:text-base">
               {designer?.bio && (
                 <BlockContent
                   blocks={designer.bio}
@@ -72,7 +72,7 @@ function Contact() {
       </div>
 
       <div className="p-10 lg:pt-36 container mx-auto relative flex justify-center shadow-lg">
-        <section className="bg-[Cornsilk] bg-opacity-75 rounded-2xl shadow-2xl lg:flex p-16">
+        <section className="bg-[Cornsilk] bg-opacity-75 rounded-2xl shadow-2xl lg:flex p-16 smbl:p-10">
           {/* <hr></hr> */}
           <div className="text-lg flex flex-col justify-center">
             <h1 className="mainfont text-base text-gray-700 mb-4 ">
