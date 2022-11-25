@@ -89,10 +89,10 @@ function SingleProduct() {
 
         <div className="flex text-gray-700 font-medium relative justify-center align-center bg-gray-100 w-auto border-t-4 border-[white]">
           <span className="relative text-base px-4 py-1 pb-4 text-center">
-            To purchase or book an order please see{" "}
+            To purchase or book an order please see {""} &rarr;
             <NavLink
               to="/contact"
-              className="inflex-flex items-center px-4 pt-5 mb-8 mt-2 rounded text-[IndianRed] -300 hover:text-white font-bold smbl:px-[0.5rem]"
+              className="inflex-flex items-center px-4  mb-8 mt-2 rounded text-[IndianRed] -300 hover:text-gray-500 font-bold smbl:px-[0.5rem]"
               activeclassname="!bg-gray-300"
             >
               Contact

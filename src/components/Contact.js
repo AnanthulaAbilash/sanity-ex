@@ -47,12 +47,12 @@ function Contact() {
           {designer?.designerImage && (
             <img
               src={urlFor(designer.designerImage).url()}
-              className="rounded-full w-32 h-32 lg:w-64 lg:h-64 mr-8 smbl:w-28 smbl:h-28"
+              className="rounded-full w-32 h-32 lg:w-64 lg:h-64 mr-8 smbl:w-28 smbl:h-28 smbl:mx-auto"
               alt={designer.name}
             />
           )}
-          <div className="text-lg flex flex-col justify-center smbl:text-base">
-            <h1 className="mainfont text-6xl text-gray-700 mb-4 smbl:text-3xl">
+          <div className="text-lg flex flex-col justify-center  smbl:text-base">
+            <h1 className="mainfont text-6xl  text-gray-700 mb-4 smbl:text-3xl smbl:text-center">
               I am{" "}
               {designer?.name && (
                 <span className="text-[Sienna]">'{designer.name}'</span>
