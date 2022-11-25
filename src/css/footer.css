@@ -122,7 +122,7 @@
     color: rgb(225, 225, 225);
     /* color: rgb(255, 128, 0); */
     font-weight: bold;
-    text-shadow:  0px 0px 1px gray;
+    text-shadow: 0px 0px 1px gray;
     letter-spacing: 0.2px;
 }
 
@@ -150,8 +150,8 @@
     }
 
     .footer .content p {
-        transform: scale(0.95);
-        right: 0rem;
+        transform: scale(1);
+        left: -6.5rem !important;
         bottom: -0.6rem;
     }
 
@@ -187,7 +187,8 @@
   
     } */
     .footer .content p {
-        left: -4.2rem !important;
+
+        left: -5rem !important;
 
     }
 
@@ -201,6 +202,11 @@
     .footer .content text {
         font-size: 0.7rem;
 
+    }
+
+    .footer-icons1 {
+
+        top: 2.8rem !important;
     }
 
 }

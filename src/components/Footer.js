@@ -10,7 +10,7 @@ function Navbar() {
       <div className="footer">
         <div className="content">
           <div>
-            <div className="footer-icons1">
+            <div className="footer-icons1 smbl:!top-[2.8rem]">
               <a
                 href="https://www.linkedin.com/in/abilashananthula/"
                 target="_blank"
@@ -27,7 +27,8 @@ function Navbar() {
                 <div className="logoBar2"></div>
               </div>
             </div>
-            <p className="smbl:!-left-[-6rem]">
+
+            <p>
               ©2022 <span> abilash.ananthula@gmail.com</span>
             </p>
           </div>
